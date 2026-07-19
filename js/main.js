@@ -4,6 +4,7 @@
   const FAMILIES = window.SITE?.FAMILIES || [];
   const SIZES = window.SITE?.SIZES || [];
   const FORMATS = window.SITE?.FORMATS || [];
+  const POSTS = window.SITE?.POSTS || [];
 
   const formatPrice = n => '$' + n.toLocaleString();
   const getParam = name => new URLSearchParams(location.search).get(name);
@@ -40,6 +41,22 @@
           </a>
           <div class="card-sku">${p.sku}</div>
           <div class="card-price"><span>From</span> ${formatPrice(p.price)}</div>
+        </div>
+      </article>
+    `;
+  }
+
+  function postCardHTML(p) {
+    return `
+      <article class="post-card">
+        <a href="post.html?id=${p.id}" class="card-image">
+          <img src="${p.cover}" alt="${p.title}" loading="lazy">
+        </a>
+        <div class="post-body">
+          <div class="post-meta">${p.category} · ${p.readTime}</div>
+          <a href="post.html?id=${p.id}"><h3 class="post-title">${p.title}</h3></a>
+          <p class="post-excerpt">${p.excerpt}</p>
+          <a href="post.html?id=${p.id}" class="post-more">Read article &rarr;</a>
         </div>
       </article>
     `;
@@ -242,6 +259,33 @@
     });
   }
 
+  // ===== Blog (Journal listing) =====
+  function initBlog() {
+    const page = document.body.dataset.page;
+    if (page !== 'blog') return;
+    const grid = document.getElementById('blog-grid');
+    if (!grid) return;
+    grid.innerHTML = POSTS.map(postCardHTML).join('');
+  }
+
+  // ===== Single article =====
+  function initPost() {
+    const page = document.body.dataset.page;
+    if (page !== 'post') return;
+    const id = getParam('id');
+    const post = POSTS.find(p => p.id === id);
+    if (!post) { location.href = 'blog.html'; return; }
+    document.title = post.title + ' · Art Li Work';
+    const cover = document.getElementById('post-cover');
+    const meta = document.getElementById('post-meta');
+    const title = document.getElementById('post-title');
+    const body = document.getElementById('post-body');
+    if (cover) { cover.src = post.cover; cover.alt = post.title; }
+    if (meta) meta.textContent = post.category + ' · ' + post.date + ' · ' + post.readTime;
+    if (title) title.textContent = post.title;
+    if (body) body.innerHTML = post.body;
+  }
+
   // ===== Init =====
   document.addEventListener('DOMContentLoaded', () => {
     initHeader();
@@ -249,5 +293,7 @@
     initShop();
     initProduct();
     initFAQ();
+    initBlog();
+    initPost();
   });
 })();

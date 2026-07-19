@@ -507,3 +507,46 @@ window.SITE.FORMATS = [
     "note": "Finished floating frame, arrives wall-ready."
   }
 ];
+
+window.SITE.POSTS = [
+  {
+    "id": "gallery-wall",
+    "title": "How to Style a Gallery Wall Without the Guesswork",
+    "date": "2026-06-18",
+    "category": "Styling",
+    "readTime": "5 min read",
+    "cover": "assets/products/ra-005-detail.webp",
+    "excerpt": "A repeatable method for arranging multiple artworks so the wall feels curated, not cluttered.",
+    "body": "<p>A gallery wall is the fastest way to add personality to a room, but it is also the easiest to get wrong. The good news: you do not need an interior designer's eye, just a system.</p><h2>Start with a unifying thread</h2><p>Pick one element that ties the pieces together, a shared color family, a consistent frame, or a similar subject. Our <a href=\"shop.html?family=golden-hour\">Golden Hour</a> and <a href=\"shop.html?family=terracotta\">Terracotta</a> collections pair naturally because they share warm, earthen tones.</p><h2>Lay it out on the floor first</h2><p>Trace each frame on kraft paper, tape the papers to the wall, and live with the arrangement for a day. Move them around before you commit a single nail.</p><h2>Mind the spacing</h2><ul><li>Keep 2 to 3 inches between frames for a tight, gallery feel.</li><li>Align tops or centers, not bottoms, for a calmer grid.</li><li>Hang the center of the arrangement at eye level, about 57 to 60 inches from the floor.</li></ul><p>Done right, the wall reads as one composed piece rather than a scattered collection.</p>"
+  },
+  {
+    "id": "texture-matters",
+    "title": "Why Texture Matters: The Case for 3D Wall Art",
+    "date": "2026-05-30",
+    "category": "Craft",
+    "readTime": "4 min read",
+    "cover": "assets/products/ra-010-detail.webp",
+    "excerpt": "Flat prints fade into the background. Relief and pigment catch light and give a room a pulse.",
+    "body": "<p>Most wall decor is printed flat. It sits still. Textured, hand-finished art does the opposite, it shifts as the light moves through the day.</p><h2>Light is the co-author</h2><p>Because our pieces are built from layered 3D relief, a low afternoon sun throws soft shadows across the surface that a flat print can never reproduce. The artwork literally changes between morning and evening.</p><h2>Texture reads as craft</h2><p>Visitors notice texture before they read the image. The raised ridges signal made by hand, which is exactly the quiet, considered feeling we design for.</p><p>That is why every Art Li Work piece is finished to order in archival pigment on textured canvas, never a thin poster.</p>"
+  },
+  {
+    "id": "right-size",
+    "title": "Choosing the Right Size Art for Every Room",
+    "date": "2026-05-12",
+    "category": "Buying Guide",
+    "readTime": "6 min read",
+    "cover": "assets/products/ra-002-detail.webp",
+    "excerpt": "A simple formula for picking dimensions that fit your wall instead of fighting it.",
+    "body": "<p>The number one mistake we see is art that is too small for the wall. When in doubt, go bigger.</p><h2>The two-thirds rule</h2><p>For a sofa or bed, choose a piece, or grouping, about two-thirds the width of the furniture. A 72-inch sofa pairs well with a 48-inch-wide artwork or a trio that spans roughly 48 inches.</p><h2>Height matters too</h2><ul><li>Small, 12 by 16 inches: intimate corners, powder rooms, gallery rows.</li><li>Medium, 16 by 24 inches: beside a console or in a hallway.</li><li>Large, 24 by 36 inches: the hero above a sofa or headboard.</li><li>X-Large, 32 by 48 inches: open-plan walls and vaulted rooms.</li></ul><p>Not sure? <a href=\"contact.html\">Send us a photo of your wall</a> and we will recommend a scale.</p>"
+  },
+  {
+    "id": "caring",
+    "title": "Caring for Your Hand-Finished Artwork",
+    "date": "2026-04-22",
+    "category": "Care",
+    "readTime": "3 min read",
+    "cover": "assets/products/ra-018-detail.webp",
+    "excerpt": "A few habits that keep archival pigment and relief looking new for decades.",
+    "body": "<p>Our artworks are sealed with a UV-stable varnish, but a little care goes a long way.</p><h2>Placement</h2><p>Avoid direct, all-day sunlight and bathrooms with poor ventilation. Indirect light is ideal and shows off the texture best.</p><h2>Cleaning</h2><ul><li>Dust gently with a soft, dry brush or microfiber cloth.</li><li>Never use water, glass cleaner, or abrasive cloths on the surface.</li><li>If framed, clean the glass, not the canvas.</li></ul><h2>Handling</h2><p>When moving a piece, hold the frame, not the stretched canvas, to protect the relief. With basic care, the color and depth will hold for years.</p>"
+  }
+];

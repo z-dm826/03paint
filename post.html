@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shop Artworks | Art Li Work</title>
-  <meta name="description" content="Browse our collection of hand-finished abstract wall art reproductions. Filter by color family and choose your perfect size.">
+  <title>Article | Art Li Work</title>
+  <meta name="description" content="Stories and styling notes from the Art Li Work studio.">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%239d7b55'/%3E%3C/svg%3E">
 </head>
-<body data-page="shop">
+<body data-page="post">
   <a class="sr-only" href="#main">Skip to content</a>
 
   <header class="header">
@@ -19,8 +19,8 @@
       </a>
       <nav>
         <ul class="nav-links">
-          <li><a href="shop.html" class="active">Shop</a></li>
-          <li><a href="blog.html">Blog</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -39,37 +39,21 @@
   </header>
 
   <main id="main">
-    <div class="page-header">
-      <div class="container">
-        <h1>Shop All Artworks</h1>
-        <p>Hand-finished abstract texture reproductions in the size and finish that fits your space.</p>
-      </div>
-    </div>
-
-    <div class="container shop-layout">
-      <aside class="shop-sidebar">
-        <h3>Filter by Subject</h3>
-        <div class="filter-group">
-          <label><input type="checkbox" value="all" checked> All Artworks</label>
-          <label><input type="checkbox" value="golden-hour"> Golden Hour</label>
-          <label><input type="checkbox" value="terracotta"> Terracotta & Earth</label>
-          <label><input type="checkbox" value="ocean-sky"> Ocean & Sky</label>
-          <label><input type="checkbox" value="botanical"> Botanical</label>
+    <div class="container">
+      <article class="article">
+        <a href="blog.html" class="article-back">&larr; Back to the Journal</a>
+        <div class="article-cover">
+          <img id="post-cover" src="" alt="">
         </div>
-      </aside>
-
-      <div>
-        <div class="shop-toolbar">
-          <span class="result-count" id="result-count">0 artworks</span>
-          <select id="sort-select" aria-label="Sort artworks">
-            <option value="featured">Featured</option>
-            <option value="new">Newest</option>
-            <option value="price-asc">Price: Low to High</option>
-            <option value="price-desc">Price: High to Low</option>
-          </select>
+        <div class="article-meta" id="post-meta"></div>
+        <h1 id="post-title"></h1>
+        <div class="article-body" id="post-body"></div>
+        <div class="article-cta">
+          <h2 class="section-title">Find the piece for your wall</h2>
+          <p class="section-subtitle">Every artwork is finished to order in archival pigment on textured canvas.</p>
+          <a href="shop.html" class="btn btn-primary">Explore the Collection</a>
         </div>
-        <div class="product-grid" id="shop-grid"></div>
-      </div>
+      </article>
     </div>
   </main>
 
