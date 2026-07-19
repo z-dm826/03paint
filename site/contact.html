@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Atelier Lumière</title>
+  <meta name="description" content="Get in touch with Atelier Lumière for custom commissions, sizing advice, wholesale inquiries, and support.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%239d7b55'/%3E%3C/svg%3E">
+</head>
+<body data-page="contact">
+  <a class="sr-only" href="#main">Skip to content</a>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Atelier Lumière home">
+        <span class="logo-mark" aria-hidden="true"></span>
+        Atelier Lumière
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" data-cart-toggle aria-label="Open cart">
+          <svg viewBox="0 0 24 24"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M6 6L5 3H2"/></svg>
+          <span class="cart-count" aria-hidden="true"></span>
+        </button>
+        <button class="icon-btn menu-toggle" aria-label="Open menu">
+          <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="page-header">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p>Questions, commissions, or wholesale inquiries? We would love to hear from you.</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div>
+          <h2 class="section-title" style="margin-bottom: 1rem;">Send a Message</h2>
+          <p style="color: var(--text-muted); margin-bottom: 2rem;">Fill out the form and we will respond within one business day. For custom commissions, please include your preferred dimensions and timeline.</p>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required placeholder="Jane Doe">
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required placeholder="jane@example.com">
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option>General inquiry</option>
+                <option>Sizing advice</option>
+                <option>Custom commission</option>
+                <option>Wholesale / Trade</option>
+                <option>Order support</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" required placeholder="Tell us about your project..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          </form>
+        </div>
+
+        <div>
+          <h2 class="section-title" style="margin-bottom: 1rem;">Other Ways to Reach Us</h2>
+          <div class="feature" style="text-align: left; margin-bottom: 1.5rem;">
+            <svg class="feature-icon" style="margin: 0 0 0.8rem;" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <h3>Email</h3>
+            <p style="color: var(--text-muted);">hello@atelierlumiere.com<br>We reply within one business day.</p>
+          </div>
+          <div class="feature" style="text-align: left; margin-bottom: 1.5rem;">
+            <svg class="feature-icon" style="margin: 0 0 0.8rem;" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <h3>Studio Hours</h3>
+            <p style="color: var(--text-muted);">Monday – Friday<br>9:00 AM – 6:00 PM GMT+8</p>
+          </div>
+          <div class="feature" style="text-align: left;">
+            <svg class="feature-icon" style="margin: 0 0 0.8rem;" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <h3>Location</h3>
+            <p style="color: var(--text-muted);">Atelier Lumière Studio<br>Online-first, shipping worldwide</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="Atelier Lumière home">
+            <span class="logo-mark" aria-hidden="true"></span>
+            Atelier Lumière
+          </a>
+          <p>Serene, hand-finished wall art for intentional spaces. Museum-quality replicas made to order.</p>
+        </div>
+        <div>
+          <h4>Shop</h4>
+          <a href="shop.html">All Artworks</a>
+          <a href="shop.html?family=golden-hour">Golden Hour</a>
+          <a href="shop.html?family=terracotta">Terracotta & Earth</a>
+          <a href="shop.html?family=ocean-sky">Ocean &amp; Sky</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="about.html">Our Story</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <a href="faq.html">Shipping & Delivery</a>
+          <a href="faq.html">Returns & Refunds</a>
+          <a href="contact.html">Bulk Orders</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year"></span> Atelier Lumière. All rights reserved.</span>
+        <span>Made with care for quiet homes.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your message. This is a demo storefront; in production this form would send your inquiry to our team.');
+      this.reset();
+    });
+  </script>
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

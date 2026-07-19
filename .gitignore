@@ -1,0 +1,10 @@
+# Internal project memory (AI assistant notes) — not part of the site
+.workbuddy/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Dependencies
+node_modules/

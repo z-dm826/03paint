@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Artworks | Atelier Lumière</title>
+  <meta name="description" content="Browse our collection of hand-finished abstract wall art reproductions. Filter by colour family and choose your perfect size.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%239d7b55'/%3E%3C/svg%3E">
+</head>
+<body data-page="shop">
+  <a class="sr-only" href="#main">Skip to content</a>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Atelier Lumière home">
+        <span class="logo-mark" aria-hidden="true"></span>
+        Atelier Lumière
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="shop.html" class="active">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" data-cart-toggle aria-label="Open cart">
+          <svg viewBox="0 0 24 24"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M6 6L5 3H2"/></svg>
+          <span class="cart-count" aria-hidden="true"></span>
+        </button>
+        <button class="icon-btn menu-toggle" aria-label="Open menu">
+          <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="page-header">
+      <div class="container">
+        <h1>Shop All Artworks</h1>
+        <p>Hand-finished abstract texture reproductions in the size and finish that fits your space.</p>
+      </div>
+    </div>
+
+    <div class="container shop-layout">
+      <aside class="shop-sidebar">
+        <h3>Filter by Subject</h3>
+        <div class="filter-group">
+          <label><input type="checkbox" value="all" checked> All Artworks</label>
+          <label><input type="checkbox" value="golden-hour"> Golden Hour</label>
+          <label><input type="checkbox" value="terracotta"> Terracotta & Earth</label>
+          <label><input type="checkbox" value="ocean-sky"> Ocean & Sky</label>
+          <label><input type="checkbox" value="botanical"> Botanical</label>
+          <label><input type="checkbox" value="blush"> Blush</label>
+          <label><input type="checkbox" value="monochrome"> Monochrome</label>
+        </div>
+      </aside>
+
+      <div>
+        <div class="shop-toolbar">
+          <span class="result-count" id="result-count">0 artworks</span>
+          <select id="sort-select" aria-label="Sort artworks">
+            <option value="featured">Featured</option>
+            <option value="new">Newest</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+          </select>
+        </div>
+        <div class="product-grid" id="shop-grid"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="Atelier Lumière home">
+            <span class="logo-mark" aria-hidden="true"></span>
+            Atelier Lumière
+          </a>
+          <p>Serene, hand-finished wall art for intentional spaces. Museum-quality replicas made to order.</p>
+        </div>
+        <div>
+          <h4>Shop</h4>
+          <a href="shop.html">All Artworks</a>
+          <a href="shop.html?family=golden-hour">Golden Hour</a>
+          <a href="shop.html?family=terracotta">Terracotta & Earth</a>
+          <a href="shop.html?family=ocean-sky">Ocean &amp; Sky</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="about.html">Our Story</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <a href="faq.html">Shipping & Delivery</a>
+          <a href="faq.html">Returns & Refunds</a>
+          <a href="contact.html">Bulk Orders</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year"></span> Atelier Lumière. All rights reserved.</span>
+        <span>Made with care for quiet homes.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
